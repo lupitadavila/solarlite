@@ -1,0 +1,29 @@
+<div>
+	<%= form_for @presale do |f| %>
+
+		<div>
+			<%= f.label "First Name" %>
+			<%= f.text_field :first_name %>
+		</div>
+
+		<div>
+			<%= f.label "Zip Code" %>
+			<%= f.text_field :zip_code %>
+		</div>
+
+		<div>
+			<%= f.label "Last Utility Bill Statement" %>
+			<%= f.email_field :bill %>
+		</div>
+
+		<div>
+			<%= f.label "How Much You Would Like to Pay" %>
+			<%= f.email_field :desired_bill %>
+		</div>
+
+		<div>
+			<%= submit_tag "Register", :class => "btn"  %>
+		</div>
+
+	<% end %>
+</div>
