@@ -1,9 +1,44 @@
-<%= "#{@user.first_name} #{@user.last_name}'s Home" %>
+<div class="row">
+	<div class="col m4">
+		<div class="card dash-widget">
+			<div class="row body">
+				<div class="col m3">
+					<img class="circle responsive-img" src="<%= image_path("61.jpg") %>" alt="User Profile" />
+				</div>
+				<div class="col m9">
+					<h1 class="name"><%= "#{@user.first_name} #{@user.last_name}" %></h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col m4">
+		<div class="card dash-widget">
+			<div class="header">
+				<h2>Rewards</h2>
+			</div>
+			<div class="row body">
+				dsfgsdfg
+			</div>
+		</div>
+	</div>
+	<div class="col m4"></div>
+</div>
+<div class="row">
 
-<div>
-	<img src="/home.png" height="120" width="120">
-	<br>
-	<%= @user.address %>
-	<br>
-	<%= "#{@user.city}, #{@user.state}, #{@user.zip_code}" %>
+	<div class="col m4">
+		<div class="row">
+			<h2>Your Home</h2>
+			<div class="col m6">
+				<img src="/home.png" height="120" width="120">
+			</div>
+			<div class="col m6">
+				<%= @user.address %>
+				<br>
+				<%= "#{@user.city}, #{@user.state}, #{@user.zip_code}" %>
+			</div>
+		</div>
+	</div>
+
+	<div class="col m8">
+	</div>
 </div>
