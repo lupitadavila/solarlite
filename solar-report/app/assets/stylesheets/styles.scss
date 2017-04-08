@@ -26,6 +26,8 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
+
+
 .content{
   padding-top: 5%;
   background: $content-color;
@@ -36,4 +38,39 @@ h1,h2,h3,h4,h5,h6{
   box-shadow: none !important;
   font-weight: 600;
   letter-spacing: .15rem !important;
+}
+
+
+.dash-widget{
+  .name{
+    font-size: 1.8rem;
+  }
+  .header{
+    padding: 5px;
+    background: $theme-light-gray;
+    h2{
+      font-family: $themeFont2;
+      text-transform: uppercase;
+      letter-spacing: .15rem;
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin: 10px;
+    }
+
+  }
+  .body{
+    padding: 20px;
+  }
+
+  span.badge {
+      font-weight: 600 !important;
+      padding: 3px 11px;
+      margin-left: 14px;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 1rem;
+      line-height: 20px;
+      height: 36px;
+
+  }
 }

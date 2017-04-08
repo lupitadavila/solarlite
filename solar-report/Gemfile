@@ -23,6 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 
 # Materialize
 gem 'materialize-sass'
+gem 'font-awesome-sass'
 # WoW js
 gem 'wow-rails'
 # animate CSS rails to work with WOW JS
