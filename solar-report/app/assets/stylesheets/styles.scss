@@ -1,0 +1,39 @@
+//------------------- Typography
+body{
+  font-family: $bodyFontFamily;
+  font-size: 18px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: $headingFontFamily;
+  font-weight: 200;
+}
+
+
+// ------ no_nav
+.main-nav{
+  box-shadow: none;
+  .logo-container{
+    padding-top: 15px;
+  }
+  ul{
+    li{
+      a{
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.content{
+  padding-top: 5%;
+  background: $content-color;
+}
+
+.btn, .btn-large{
+  font-family: $themeFont1;
+  box-shadow: none !important;
+  font-weight: 600;
+  letter-spacing: .15rem !important;
+}

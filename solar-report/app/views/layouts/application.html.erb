@@ -9,9 +9,13 @@
   </head>
 
   <body>
-  	<% if @no_nav == false %>
+    <% if @no_nav == false %>
   		<%= render 'layouts/nav' %>
   	<% end %>
-    <%= yield %>
+    <main class="content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
   </body>
 </html>
