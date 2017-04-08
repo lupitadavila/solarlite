@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 	end
 
 	def new
+		@no_nav = true
 		@user = User.new
 	end
 
@@ -19,6 +20,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
+		@no_nav = false
 		@user = User.find(params[:id])
 	end
 
