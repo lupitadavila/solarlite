@@ -11,9 +11,11 @@
 </div>
 <br>
 <h2>View Your Solar Potential</h2>
-<div>
-	<%= render 'layouts/form' %>
-</div>
+<% if !current_user %>
+	<div>
+		<%= render 'layouts/form' %>
+	</div>
+<% end %>
 <br>
 <div>
 	<h2>Featured Solarlite</h2>

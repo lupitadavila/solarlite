@@ -18,7 +18,6 @@ class PresalesController < ApplicationController
 	end
 
 	def show
-		@nonav = false
 		@presale = Presale.find(params[:id])
 	end
 
