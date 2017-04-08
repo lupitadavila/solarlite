@@ -9,6 +9,9 @@
   </head>
 
   <body>
+  	<% if @no_nav == false %>
+  		<%= render 'layouts/nav' %>
+  	<% end %>
     <%= yield %>
   </body>
 </html>
