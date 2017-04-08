@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
 	resources :users
 	resources :presales
+	resources :events
 
 	get '/login' => 'sessions#new'
 	post '/login' => 'sessions#create'
