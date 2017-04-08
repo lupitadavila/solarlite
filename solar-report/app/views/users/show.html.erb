@@ -1,1 +1,9 @@
-<%= "#{@user.first_name} #{@user.last_name}" %>
+<%= "#{@user.first_name} #{@user.last_name}'s Home" %>
+
+<div>
+	<img src="/home.png" height="120" width="120">
+	<br>
+	<%= @user.address %>
+	<br>
+	<%= "#{@user.city}, #{@user.state}, #{@user.zip_code}" %>
+</div>
