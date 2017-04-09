@@ -1,3 +1,21 @@
 <h1>View Your Potential Savings</h1>
 
-<%= @presale.first_name %>
+<h2><%= @presale.first_name %>, Here's How Much You Could Be Saving</h2>
+
+<h3>Normal Utility Bill After 1 Year $<%= @bill_per_year %></h3>
+
+<h3>Normal Utility Bill After 20 Years $<%= @bill_per_20year %></h3>
+
+<h3>Solar Bill After 1 Year $<%= @solar_bill %></h3>
+
+<h3>Solar Bill After 20 Years $<%= @solar_bill20 %></h3>
+
+<div>
+	<h2>Your Savings After A Year</h2>
+	<p><%= @bill_per_year - @solar_bill %></p>
+</div>
+
+<div>
+	<h2>Your Savings After 20 Years</h2>
+	<p><%= @bill_per_20year - @solar_bill20 %></p>
+</div>
