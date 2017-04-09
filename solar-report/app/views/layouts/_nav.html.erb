@@ -1,21 +1,48 @@
-<nav class="main-nav" role="navigation">
-	<div class="nav-wrapper container">
-		<a href="/" class="brand-logo logo-container">
-			<img src="<%= image_path("logo.png") %>" alt="Solar Report" />
-		</a>
-		<ul class="right white-text">
-		<% if current_user %>
-		  	<ul class="right white-text">
-					<li><%= link_to "Home", root_path, class: "nav-color" %></li>
-					<li><%= link_to "Usage", root_path, class: "nav-color" %></li>
-					<li><%= link_to "Leaderboard", root_path, class: "nav-color" %></li>
-					<li><%= link_to "Challenges", root_path, class: "nav-color" %></li>
-					<li><%= link_to "Profile", user_path(current_user), class: "nav-color" %></li>
-					<li><%= link_to "Log Out", logout_path, class: "nav-color" %></li>
-		<% else %>
-					<li><%= link_to 'Login', login_path, class: "nav-color" %></li>
-					<li><%= link_to 'Register', new_user_path, class: "nav-color" %>
-	  <%end%>
-		</ul>
-	</div>
-</nav>
+<div class="navbar-fixed">
+	<nav class="main-nav" role="navigation">
+		<div class="nav-wrapper container">
+
+			<div class="row">
+
+				<div class="col m4">
+					<a href="/" class="brand-logo logo-container">
+						<img src="<%= image_path("logo.png") %>" alt="Solar Report" />
+					</a>
+					<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+				</div>
+
+				<div class="col m8">
+					<ul class="right hide-on-med-and-down">
+					<% if current_user %>
+								<li><%= link_to "Home", root_path, class: "nav-color" %></li>
+								<li><%= link_to "Usage", root_path, class: "nav-color" %></li>
+								<li><%= link_to "Leaderboard", root_path, class: "nav-color" %></li>
+								<li><%= link_to "Challenges", root_path, class: "nav-color" %></li>
+								<li><%= link_to "Profile", user_path(current_user), class: "nav-color" %></li>
+								<li><%= link_to "Log Out", logout_path, class: "nav-color" %></li>
+					<% else %>
+								<li><%= link_to 'Login', login_path, class: "nav-color" %></li>
+								<li><%= link_to 'Register', new_user_path, class: "nav-color" %>
+				  <%end%>
+					</ul>
+
+					<ul class="side-nav">
+						<% if current_user %>
+									<li><%= link_to "Home", root_path, class: "nav-color" %></li>
+									<li><%= link_to "Usage", root_path, class: "nav-color" %></li>
+									<li><%= link_to "Leaderboard", root_path, class: "nav-color" %></li>
+									<li><%= link_to "Challenges", root_path, class: "nav-color" %></li>
+									<li><%= link_to "Profile", user_path(current_user), class: "nav-color" %></li>
+									<li><%= link_to "Log Out", logout_path, class: "nav-color" %></li>
+						<% else %>
+									<li><%= link_to 'Login', login_path, class: "nav-color" %></li>
+									<li><%= link_to 'Register', new_user_path, class: "nav-color" %>
+					  <%end%>
+					</ul>
+
+				</div>
+			</div>
+
+		</div>
+	</nav>
+</div>

@@ -1,29 +1,29 @@
-<div>
+
 	<%= form_for @presale do |f| %>
+		<div class="row">
+			<div class="col m6 input-field">
+				<%= f.label "Name" %>
+				<%= f.text_field :first_name %>
+			</div>
 
-		<div>
-			<%= f.label "Name" %>
-			<%= f.text_field :first_name %>
+			<div class="col m6 input-field">
+				<%= f.label "Zip Code" %>
+				<%= f.text_field :zip_code %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col m6 input-field">
+				<%= f.label "Last Utility Bill Statement" %>
+				<%= f.text_field :bill %>
+			</div>
+			<div class="col m6 input-field">
+				<%= f.label "How Much You Would Like to Pay" %>
+				<%= f.text_field :desired_bill %>
+			</div>
 		</div>
 
-		<div>
-			<%= f.label "Zip Code" %>
-			<%= f.text_field :zip_code %>
-		</div>
-
-		<div>
-			<%= f.label "Last Utility Bill Statement" %>
-			<%= f.text_field :bill %>
-		</div>
-
-		<div>
-			<%= f.label "How Much You Would Like to Pay" %>
-			<%= f.text_field :desired_bill %>
-		</div>
-
-		<div>
+		<div class="row center">
 			<%= submit_tag "View Your Solar Potential", :class => "btn"  %>
 		</div>
 
 	<% end %>
-</div>

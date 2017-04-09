@@ -1,53 +1,79 @@
+<header>
+  <div class="parallax-container">
+      <section class="form-section">
+      <div class="container">
+        <div class="row solar-potential">
+          <div class="col m6 offset-m6 card wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+              <h2>Create a Brighter World</h2>
+        	     <%= render 'layouts/form' %>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      </section>
+      <div class="parallax"><img src="<%= image_path('banner.jpg') %>"/></div>
+  </div>
+</header>
+
 <main class="content">
-    <div class="container">
+  <div class="container">
     	<h1>Welcome To Solarlite</h1>
-		<h3>"Run by the sun"</h3>
-    </div>
+       <h2>About Us</h2>
+       <span><small>"Run by the sun"</small></span>
+     	<p class="flow-text">SolarLite is a global platform that leverages community & rewards to give homeowners the power to create a brighter world.</p>
+
+  </div>
+
+  <div class="separator divider"></div>
+
+  <br>
 </main>
+<br><br>
 
-<div>
-	<h2>About Us</h2>
-	<p>SolarLite is a global platform that leverages community & rewards to give homeowners the power to create a brighter world.</p>
-</div>
-<br>
-<h2>View Your Solar Potential</h2>
-<% if !current_user %>
-	<div>
-		<%= render 'layouts/form' %>
-	</div>
-<% end %>
-<br>
-<div>
-	<h2>Featured Solarlite</h2>
-	<img class="featured_user" src="/family_home.png" height="190" width="280">
-	<p>John Doe</p>
-	<p>Rank #1</p>
-	<p>Savings This Year <h3>$357.89</h3></p>
-	<p>Lifetime Savings <h3>$7,895.78</h3></p>
-</div>
+<section>
+  <div class="container">
+    <h2>Featured Solarlite</h2>
+    <div class="row">
 
-<div>
-	<h4>Top Solarlites</h4>
-	<ol>
-		<li><a href="/users/1">John Doe</a></li>
-		<li><a href="#">Lupita Davila</a></li>
-		<li><a href="#">Brian Bernheim</a></li>
-		<li><a href="#">Anthony Holloway</a></li>
-		<li><a href="#">Ariana Whitson</a></li>
-	</ol>
-</div>
-<!-- Have these two h4 tags side by side in boxes -->
-<div>
-	<h4>Users In Your Area</h4>
-	<ol>
-		<li><a href="#">Hussein Al-sammaraie</a></li>
-		<li><a href="#">Jack Howerton</a></li>
-		<li><a href="/users/1">John Doe</a></li>
-		<li><a href="#">Max Bower</a></li>
-		<li><a href="#">Ken Rettberg</a></li>
-	</ol>
-</div>
-<br>
+      <div class="col m6">
+        <div class="row">
+          <div class="col m6">
+            <img class="featured_user responsive-img" src="/family_home.png" height="190" width="280">
+          </div>
+          <div class="col m6">
+            <p><strong>John Doe, Rank #1</strong></p>
+        	  <p>Savings This Year <span class="flow-text">$357.89</span></p>
+        	  <p>Lifetime Savings <span class="flow-text">$7,895.78</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m3">
+      	<h4>Top Solarlites</h4>
+      	<ol>
+      		<li><a href="/users/1">John Doe</a></li>
+      		<li><a href="#">Lupita Davila</a></li>
+      		<li><a href="#">Brian Bernheim</a></li>
+      		<li><a href="#">Anthony Holloway</a></li>
+      		<li><a href="#">Ariana Whitson</a></li>
+      	</ol>
+      </div>
+
+      <div class="col m3">
+      	<h4>Users In Your Area</h4>
+      	<ol>
+      		<li><a href="#">Hussein Al-sammaraie</a></li>
+      		<li><a href="#">Jack Howerton</a></li>
+      		<li><a href="/users/1">John Doe</a></li>
+      		<li><a href="#">Max Bower</a></li>
+      		<li><a href="#">Ken Rettberg</a></li>
+      	</ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <div>
 	<%= render 'layouts/footer' %>
 </div>
