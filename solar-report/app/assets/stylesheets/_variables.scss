@@ -317,7 +317,8 @@ $h5-fontsize: 1.14rem !default;
 // // 21. Footer
 // // ==========================================================================
 //
-$footer-bg-color: darken($theme-gray, 5%);
+$footer-bg-color: darken($theme-gray, 2%);
+$footer-color: $white;
 //
 //
 // // 22. Flow Text
