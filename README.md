@@ -20,3 +20,8 @@ We want to create a lot more functionality with our product. There were so many 
 * html5
 * css3
 * postgresql
+
+#Team
+- Lupita Davila
+- Brian Bernheim
+- Anthony Holloway
