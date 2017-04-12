@@ -1,0 +1,76 @@
+<div class="row wow fadeIn">
+	<div class="col m4">
+		<div class="card dash-widget">
+			<div class="row body">
+				<div class="col m3">
+					<img class="circle responsive-img" src="<%= image_path("61.jpg") %>" alt="User Profile" />
+				</div>
+				<div class="col m9">
+					<h1 class="name"><%= "#{@user.first_name} #{@user.last_name}" %><span class="new badge" data-badge-caption="Solarlite"><small><i class="material-icons">brightness_low</i></small></span></h1>
+				</div>
+			</div>
+			<div class="row flow-text">
+				<p class="body"><i class="material-icons">redeem</i> 2,400 <small>points</small>
+				<br><i class="fa fa-trophy" aria-hidden="true"></i> <small>Ranking:</small> 2</p>
+			</div>
+		</div>
+	</div>
+	<div class="col m4">
+		<div class="card dash-widget">
+			<div class="header">
+				<h2>Rewards</h2>
+			</div>
+			<div class="row body">
+					<p class="flow-text"><i class="material-icons">supervisor_account</i> 3/5 <small>Referrals</small></p>
+					<p class="flow-text"><i class="material-icons">payment</i> 8/12 <small>On-time Payments Left</small></p>
+					<a class="btn btn-large">Refer a Friend</a>
+			</div>
+		</div>
+	</div>
+	<div class="col m4">
+		<div class="card dash-widget">
+			<div class="header">
+				<h2>Upcoming Events</h2>
+
+			</div>
+			<div class="row body">
+				<p>Solarlite Events in your community</p>
+				<ul>
+					<li><i class="material-icons">event</i> 3/15 - <a>Solar BBQ</a> at Dolores Park</li>
+					<li><i class="material-icons">event</i> 5/5 - <a>Solar Panel - Ways to improve your energy Savings</a> - At Fort Mason </li>
+				</ul>
+				<a class="btn">RSVP</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+
+	<div class="col m4 wow fadeIn">
+		<div class="row">
+			<h2>Your Home</h2>
+			<div class="col m4">
+				<img src="/home.png" class="responsive-img">
+			</div>
+			<div class="col m8 wow fadeIn">
+				<%= @user.address %>
+				<br>
+				<%= "#{@user.city}, #{@user.state}, #{@user.zip_code}" %>
+			</div>
+		</div>
+		<div class="row">
+			<a class="btn">Set a Goal</a>
+		</div>
+	</div>
+
+	<div class="col m8">
+		<div class="card dash-widget">
+			<div class="header">
+				<h2>Usage</h2>
+			</div>
+			<div class="row body">
+				<div id="chart-div"></div>
+			</div>
+		</div>
+	</div>
+</div>
